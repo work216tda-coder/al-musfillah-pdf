@@ -15,3 +15,4 @@ google-generativeai
 openpyxl
 gunicorn
 Werkzeug
+docx2pdf
