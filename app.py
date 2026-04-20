@@ -17,7 +17,6 @@ import fitz  # PyMuPDF
 from pptx import Presentation
 from pptx.util import Inches
 from PIL import Image
-from docx2pdf import convert
 from xhtml2pdf import pisa
 import pytesseract
 import google.generativeai as genai
