@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Musfillah PDF - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .tool-card:hover { transform: scale(1.02); transition: 0.2s; background-color: #f9fafb; cursor: pointer; }
+        .ad-label { text-align: center; font-size: 10px; color: #9ca3af; text-transform: uppercase; font-weight: bold; margin-bottom: 4px; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-between items-center gap-4">
+            
+            <div class="flex items-center flex-shrink-0">
+                <div class="text-right mr-3">
+                    <div class="text-xl font-bold text-blue-800 leading-none">Al Musfillah <span class="text-red-600">PDF</span></div>
+                    <div class="text-[10px] text-gray-500 font-semibold tracking-wider mt-1 uppercase italic">Your Trusted PDF Partner</div>
+                </div>
+                <img src="/static/logo.png" alt="Logo" class="h-14 w-14 rounded-full border-2 border-blue-800" style="width: 56px; height: 56px; object-fit: cover;" onerror="this.src='https://via.placeholder.com/60/1e40af/ffffff?text=PDF'">
+            </div>
+            
+            <div class="flex flex-row flex-wrap justify-center md:justify-start gap-2 font-semibold text-xs md:text-sm w-full md:w-auto">
+                <a href="/" class="px-5 py-2 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition">Home</a>
+                <a href="#organize" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">Organize</a>
+                <a href="#edit" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">View & Edit</a>
+                <a href="#convert-from" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">From PDF</a>
+                <a href="#convert-to" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">To PDF</a>
+                <a href="#ai-pdf" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">AI PDF</a>
+                <a href="#security" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full shadow-sm border border-gray-200 hover:bg-blue-600 hover:text-white transition">Security</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto mt-4 px-6 text-center">
+        <p class="ad-label">Advertisement</p>
+        <div class="bg-gray-200 h-20 w-full flex items-center justify-center text-gray-400 text-xs italic border border-dashed border-gray-300 rounded-lg">Leaderboard Ad (728x90)</div>
+    </div>
+
+    <header class="bg-blue-900 text-white py-12 text-center mt-4">
+        <h1 class="text-4xl font-bold italic tracking-wider uppercase">Al Musfillah PDF</h1>
+        <p class="mt-2 text-lg opacity-80 font-medium">Fast, Secure and Professional PDF Management</p>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col lg:flex-row gap-8">
+        <div class="lg:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="organize" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-layer-group mr-2"></i> Organize</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=Merge PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Merge PDF</a>
+                    <a href="/tool?name=Split PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Split PDF</a>
+                    <a href="/tool?name=Rotate PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Rotate PDF</a>
+                    <a href="/tool?name=Delete PDF Pages" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Delete PDF Pages</a>
+                </div>
+            </div>
+
+            <div id="edit" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-edit mr-2"></i> View & Edit</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=Edit PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Edit PDF</a>
+                    <a href="/tool?name=PDF Reader" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF Reader</a>
+                    <a href="/tool?name=Number Pages" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Number Pages</a>
+                    <a href="/tool?name=Watermark PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Watermark PDF</a>
+                </div>
+            </div>
+
+            <div id="convert-from" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-file-export mr-2"></i> Convert from PDF</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=PDF to Word" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF to Word</a>
+                    <a href="/tool?name=PDF to Excel" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF to Excel</a>
+                    <a href="/tool?name=PDF to PPT" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF to PPT</a>
+                    <a href="/tool?name=PDF to JPG" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF to JPG</a>
+                </div>
+            </div>
+
+            <div id="convert-to" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-file-import mr-2"></i> Convert to PDF</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=Word to PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Word to PDF</a>
+                    <a href="/tool?name=JPG to PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">JPG to PDF</a>
+                    <a href="/tool?name=HTML to PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">HTML to PDF</a>
+                    <a href="/tool?name=PDF OCR" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">PDF OCR</a>
+                </div>
+            </div>
+
+            <div id="ai-pdf" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-robot mr-2"></i> AI PDF</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=AI PDF Assistant" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">AI PDF Assistant</a>
+                    <a href="/tool?name=Chat with PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Chat with PDF</a>
+                    <a href="/tool?name=Translate PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Translate PDF</a>
+                    <a href="/tool?name=Summarize PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Summarize PDF</a>
+                </div>
+            </div>
+
+            <div id="security" class="rounded-xl overflow-hidden shadow-lg border border-blue-200">
+                <div class="bg-blue-700 p-4 text-white font-bold text-lg"><i class="fas fa-shield-alt mr-2"></i> Security</div>
+                <div class="bg-green-500 p-5 space-y-3">
+                    <a href="/tool?name=Sign PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Sign PDF</a>
+                    <a href="/tool?name=Unlock PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Unlock PDF</a>
+                    <a href="/tool?name=Protect PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Protect PDF</a>
+                    <a href="/tool?name=Redact PDF" class="tool-card bg-white p-3 rounded-lg font-bold text-blue-900 block shadow-sm">Redact PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <aside class="lg:w-1/4">
+            <p class="ad-label">Advertisement</p>
+            <div class="bg-gray-100 h-[600px] w-full rounded-xl flex items-center justify-center text-gray-400 border border-dashed border-gray-300 sticky top-24">Vertical Sidebar Ad</div>
+        </aside>
+    </div>
+
+    <div class="max-w-7xl mx-auto mb-10 px-6">
+        <p class="ad-label">Advertisement</p>
+        <div class="bg-gray-200 h-24 w-full flex items-center justify-center text-gray-400 border border-gray-300 rounded-lg">Footer Banner Ad</div>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-10">
+        <p class="font-bold text-xl uppercase tracking-widest">Al Musfillah PDF</p>
+        <p class="opacity-60 text-sm mt-2 font-medium">© 2026 Professional Document Solutions. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

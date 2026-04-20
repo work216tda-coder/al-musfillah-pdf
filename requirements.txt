@@ -1,0 +1,17 @@
+Flask
+PyPDF2
+reportlab
+arabic-reshaper
+python-bidi
+pdf2docx
+pdfplumber
+pandas
+pymupdf
+python-pptx
+Pillow
+xhtml2pdf
+pytesseract
+google-generativeai
+openpyxl
+gunicorn
+Werkzeug
